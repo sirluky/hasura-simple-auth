@@ -20,6 +20,7 @@ const typeDefs = gql`
 `
 
 const server = new ApolloServer({
+  playground: false,
   typeDefs,
   resolvers,
   context: ({ req }) => {
